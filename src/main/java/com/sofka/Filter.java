@@ -4,8 +4,8 @@ import java.io.PrintStream;
 import java.util.List;
 
 public class Filter {
-    Statement statement = new Statement();
-    List<String> statementList = statement.returnStatementList();
+    private Statement statement = new Statement();
+    private List<String> statementList = statement.returnStatementList();
 
     public void printOnlyCredit(PrintStream printer){
         System.out.println("\n FILTER BY CREDIT");

@@ -3,8 +3,7 @@ package com.sofka;
 import java.text.DecimalFormat;
 
 public class LineStatement {
-
-    Statement statement = new Statement();
+    private Statement statement = new Statement();
 
     public String decimalFormatter(double number){
         DecimalFormat df = new DecimalFormat("#.00");

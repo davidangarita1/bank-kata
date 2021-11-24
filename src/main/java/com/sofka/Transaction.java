@@ -2,7 +2,7 @@ package com.sofka;
 
 public class Transaction {
     private double balance = 0;
-    LineStatement lineStatement = new LineStatement();
+    private LineStatement lineStatement = new LineStatement();
 
     public double amountOf(double amount) {
         return amount;

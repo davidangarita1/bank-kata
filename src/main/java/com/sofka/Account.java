@@ -4,7 +4,7 @@ import java.io.PrintStream;
 
 public class Account {
     private Statement statement;
-    Transaction transaction = new Transaction();
+    private Transaction transaction = new Transaction();
 
     public Account(Statement statement) {
         this.statement = statement;
