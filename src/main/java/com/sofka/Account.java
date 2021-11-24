@@ -1,7 +1,6 @@
 package com.sofka;
 
 import java.io.PrintStream;
-import java.util.ArrayList;
 
 public class Account {
     private Statement statement;
@@ -19,7 +18,12 @@ public class Account {
         transaction.debit(amount, date);
     }
 
-    void printStatement(PrintStream printer) {
+    void sendMoney(double amount, String date){
+        transaction.debit(amount, date);
+    }
+
+    void printStatement(PrintStream printer, String filter) {
+        printer.println("\n ALL STATEMENT");
         statement.printTitle(printer);
         statement.printLines(printer);
     }

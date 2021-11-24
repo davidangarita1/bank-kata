@@ -7,18 +7,18 @@ public class Statement {
     static ArrayList<String> statementList = new ArrayList<>();
 
     public void printTitle(PrintStream printer){
-        String title = "|   Date   | Credit |  Debit  |  Balance  |";
+        String title = "|   Date   |Credit |Debit |Balance";
         printer.println(title);
     }
 
     public static void printLines(PrintStream printer){
-        for(String line : statementList){
-            printer.println(line);
+        for(int i = statementList.size()-1; i >= 0; i--){
+            printer.println(statementList.get(i));
         }
     }
 
     public ArrayList<String> returnStatementList(){
-        return this.statementList;
+        return statementList;
     }
 
     public void addStatementLine(String line){
